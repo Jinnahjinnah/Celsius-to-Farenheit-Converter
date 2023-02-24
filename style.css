@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./backgroundimg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.wrapper {
+  padding: 1% 2%;
+  height: 40%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper h2 {
+  color: rgb(107, 105, 211);
+  text-align: center;
+  margin: 10px auto 0;
+}
+
+.wrapper div {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper div input {
+  margin: 0 auto 30px;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+  padding: 5px 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50px;
+  color: #000;
+}
+
+.wrapper div input:focus {
+  outline: 2px solid rgb(107, 105, 211);
+}
+
+.wrapper div button {
+  width: 60%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(107, 105, 211);
+}
+
+.wrapper div button:hover {
+  background-color: rgb(163, 118, 236);
+  cursor: pointer;
+}
+
+.res {
+  text-align: center;
+  position: absolute;
+  top: 175px;
+  right: 120px;
+  margin: 0 auto 0;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  color: rgb(107, 105, 211);
+}
+
+.res span {
+  position: absolute;
+  bottom: -1px;
+  left: 75px;
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    height: 45%;
+  }
+
+  .res {
+    font-size: 1em;
+    top: 200px;
+    left: 30px;
+  }
+
+  .res span {
+    left: 65px;
+  }
+}
